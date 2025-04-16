@@ -16,7 +16,9 @@ import Dashboard from "./pages/Dashboard";
 import JobList from "./pages/jobs/JobList";
 import CreateJob from "./pages/jobs/CreateJob";
 import JobDetail from "./pages/jobs/JobDetail";
-import CandidatesList from "./pages/hr/CandidatesList";
+import CandidatesList from "./pages/candidates/CandidatesList";
+import ApplicationsList from "./pages/applications/ApplicationsList";
+import UserProfile from "./pages/profile/UserProfile";
 import Assessment from "./pages/assessment/Assessment";
 import AssessmentResults from "./pages/assessment/AssessmentResults";
 import NotFound from "./pages/NotFound";
@@ -61,6 +63,11 @@ const App = () => (
                 <Route path="/jobs/create" element={<ProtectedRoute><CreateJob /></ProtectedRoute>} />
                 <Route path="/jobs/:id" element={<ProtectedRoute><JobDetail /></ProtectedRoute>} />
                 <Route path="/jobs/:id/candidates" element={<ProtectedRoute><CandidatesList /></ProtectedRoute>} />
+                
+                {/* Candidate Routes */}
+                <Route path="/applications" element={<ProtectedRoute><ApplicationsList /></ProtectedRoute>} />
+                <Route path="/candidates" element={<ProtectedRoute><CandidatesList /></ProtectedRoute>} />
+                <Route path="/profile" element={<ProtectedRoute><UserProfile /></ProtectedRoute>} />
                 
                 {/* Assessment Routes */}
                 <Route path="/assessment/:id" element={<ProtectedRoute><Assessment /></ProtectedRoute>} />
