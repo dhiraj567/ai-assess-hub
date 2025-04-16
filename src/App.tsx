@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +9,7 @@ import { JobProvider } from "./contexts/JobContext";
 import { AssessmentProvider } from "./contexts/AssessmentContext";
 
 // Pages
+import Landing from "./pages/Landing";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Dashboard from "./pages/Dashboard";
@@ -46,8 +48,8 @@ const App = () => (
             <Sonner />
             <BrowserRouter>
               <Routes>
-                {/* Auth Routes */}
-                <Route path="/" element={<Navigate to="/login" replace />} />
+                {/* Landing and Auth Routes */}
+                <Route path="/" element={<Landing />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 
