@@ -52,6 +52,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+        evalverse: {
+          purple: '#6E59A5',
+          blue: '#0EA5E9',
+          brightPurple: '#8B5CF6',
+          lightGray: '#F6F6F7',
+          charcoal: '#221F26',
+          lightPurple: '#E5DEFF',
+          success: '#10B981',
+          warning: '#F59E0B',
+          danger: '#EF4444',
+        },
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
